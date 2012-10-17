@@ -1,0 +1,18 @@
+{
+  "name": "questions-pullout",
+  "version": "0.1.0",
+  "dependencies": {
+    "onyx": "*",
+    "layout": "*",
+    "socket": "*",
+    "pullout-toolbar": "*"
+  },
+  "readme": "# questions-pullout\n\nPullout toolbar for submitting questions over websockets\n\n\n### Dependencies\n\n* onyx\n* layout\n* socket\n* pullout-toolbar\n",
+  "readmeFilename": "README.md",
+  "_id": "questions-pullout@0.1.0",
+  "description": "Pullout toolbar for submitting questions over websockets",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phated/enyo-questions-pullout"
+  }
+}

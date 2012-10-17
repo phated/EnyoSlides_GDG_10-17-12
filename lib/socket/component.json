@@ -1,0 +1,15 @@
+{
+  "name": "socket",
+  "version": "0.1.2",
+  "dependencies": {
+    "socket.io-client": "git://github.com/phated/socket.io-client.git#0.9.10-bower"
+  },
+  "readme": "# Enyo-Socket.io\n\nSocket.io wrapper for EnyoJS\n\n## Example\n\nCan be used in much the same way as Socket.io\n\n```javascript\nvar socket = new Socket();\nsocket.on('example', function(data){\n  console.log(data);\n});\n```\n\nCan also be passed a map of key-value pairs for on()\n\n```javascript\nvar socket = new Socket();\nsocket.on({\n  example: function(data){\n    console.log(data);\n  },\n  example2: function(data){\n    console.log(data);\n  }\n});\n```\n\nConstructor can take an initial map of key-value pairs that will be passed to on() during instantiation\n\n```javascript\nvar socket = new Socket({\n  init: {\n    on: {\n      example: function(data){\n        console.log(data);\n      },\n      example2: function(data){\n        console.log(data);\n      }\n    }\n  }\n});\n```\n\nConvenience function for emit exists on Socket\n\n```javascript\nvar socket = new Socket();\nsocket.emit('example', 'example data');\n```\n\nSocket.io address can be configured on instantiation (Defaults to window.location.host)\n\n```javascript\nvar socket = new Socket({\n  address: 127.0.0.1\n});\n```\n\nSocket.io configuration options can be passed to constructor as connOptions\n\n```javascript\nvar socket = new Socket({\n  connOptions: {\n    transports: ['websocket']\n  }\n});\n```\n\n## TODO\n\nEnyo Tests\n\nSolidify API",
+  "readmeFilename": "README.md",
+  "_id": "socket@0.1.2",
+  "description": "Socket.io wrapper for EnyoJS",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phated/enyo-socket.io"
+  }
+}
